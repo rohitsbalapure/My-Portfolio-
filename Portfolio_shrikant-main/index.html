@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap 4.67v links below -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"></script>
+	<!-- external css link attached below -->
+	<link rel="stylesheet" type="text/css" href="indexStyling.css">
+	<!-- aos link animation -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Rohit Portfolio</title>
+</head>
+
+<body>
+	<div class="portfolio_mdiv">
+		<div class="navigation_bar">
+
+			<nav class="navbar navbar-expand-lg navbar-light ">
+				<a class="navbar-brand" href="#"><span class="logo">Rohit</span></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#home"><span class="navmenu">Home</span> <span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="navmenu">About</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="navmenu">Skills</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="navmenu">Projects</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><span class="navmenu">Contact</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- nav bar dic closed here -->
+		<div class="content-portfolio">
+			<div id="home" class="homesec">
+				<div class="homesectiondiv">
+					<span class="ginfo">Hello</span><br>
+					<span class="ginfo" data-aos="slide-up">My name is </span><br>
+					<p class="myname" data-aos="slide-right">Rohit Balapure</p><br>
+					<span class="ginfo">I am a <span class="designation">Full Stack Developer</span></span><br><br>
+					<button class="rsm"> <a
+							href="https://docs.google.com/document/d/17q0PtUXuJ1_-BGlMRpN80DiNH0xiFnroli3W5NK5IYU/edit?usp=drive_link">RESUME</a></button>
+				</div>
+			</div>
+			<div id="about">
+				<div class="abtimg">
+					<img src="https://i.pinimg.com/originals/bf/57/02/bf57026ee75af2f414000cec322f7404.gif"
+						alt="myimage" height="300px" class="myimg">
+				</div>
+				<div class="carrerobj">
+					<h1 class="sectiontitle">ABOUT</h1>
+					<p>An ambitious full stack software engineer with strong command in Java, JavaScript, CSS,
+						HTML, Spring Boot, Hiberante, SQL database and
+						web service. Constant learner and ability to adapt to new technologies. Possess strong
+						communication and team
+						management skills.</p>
+				</div>
+			</div>
+			<h3>Skills</h3>
+			 	<div class="skills" >
+					<ul class="myUL">
+						<li>Java</li>
+						<li>JavaScript</li>
+						<li>SQL</li>
+					  </ul>
+				</div>
+			<!--	<div id="projects">
+					<h1>Projects SECTION</h1>
+				</div>
+				<div id="contact">
+					<h1>contact SECTION</h1>
+				</div> -->
+
+		</div>
+	</div>
+	<!-- portfoliodiv ends here -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1500
+		});
+	</script>
+</body>
+
+</html>
