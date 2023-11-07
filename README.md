@@ -12,5 +12,6 @@ Technologies Used
 1. Html
 2. CSS
 3. JavaScript
-4. Bootstrap
+4. Google fonts
+5. 
 .
