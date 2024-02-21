@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohit</title>
@@ -9,8 +10,82 @@
 
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
-</head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .menumob {
+            display: none;
+            padding: 0px;
+            height: 100vh;
+        }
+
+        #navitoms li {
+            text-align: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            padding: 10px 0px 10px 0px;
+        }
+
+        .skill-content h4 {
+            color: #fed700;
+            font-size: 23px;
+            line-height: 70px;
+            text-transform: capitalize;
+        }
+
+        .progress-bar {
+            width: 300px;
+            height: 20px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+
+        .frontend-bar {
+            width: 90%;
+            height: 100%;
+            background-color: #5e1a02;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .backend-bar {
+            width: 85%;
+            height: 100%;
+            background-color: #802605;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .fullstack-bar {
+            width: 80%;
+            height: 100%;
+            background-color: #a32f05;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        @media only screen and (max-width:520px) {
+            .menumob {
+                width: 100%;
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
 
 <body>
 
@@ -18,12 +93,12 @@
     <header class="header-area">
         <div class="container">
             <div class="header">
-               
+
                 <a href="" class="logo">
                     <img src="files/Rohitlogo.png" alt="" class="signature">
                     <i class="fa fa-bolt"></i>
                 </a>
-                   
+
                 <ul class="navbar">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -32,57 +107,93 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                
+
                 <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars" id="Hamburger" onclick="showMenu()" style="z-index: 999;"> </i>
                 </div>
 
             </div>
-        </div> 
+        </div>
     </header>
- 
+    <!-- ---------------------------Menu Hamburger --------------------- -->
+
+    <section class="project-content menumob" id="menumob">
+        <div class="container">
+            <ul class="navbar" id="navitoms">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
     <!-------------------------- Home Page -------------------------->
     <div class="FirstElement" id="home">
         <div class="profile-photo">
-            <img src="https://i.pinimg.com/originals/bf/57/02/bf57026ee75af2f414000cec322f7404.gif" alt="profile picture">
+            <img src="https://i.pinimg.com/originals/bf/57/02/bf57026ee75af2f414000cec322f7404.gif"
+                alt="profile picture">
         </div>
         <div class="profile-text">
             <h5>Hi I'm </h5><br>
             <h1>Rohit</h1><br>
-            <p>Welcome to my portfolio website! I'm a passionate and aspiring software engineer with a strong desire to create innovative solutions and push the boundaries of technology.With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
-            
+            <p id="displayParagraph">Welcome to my portfolio website! I'm a passionate and aspiring software engineer
+                with a strong desire to
+                create innovative solutions and push the boundaries of technology. With a deep love for coding and
+                problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field.
+            </p>
+
             <div class="btn-group">
-                <a href="files/SowndharResume.pdf" class="btn   active">Download CV</a>
-                <a href="mailto:sowndharnewbie@gmail.com" class="btn">Contact</a>
+                <a href="https://drive.google.com/file/d/1HZY6qzESe_jkY7vXyVOSEOjtkw2DDQzl/view?usp=sharing"
+                    class="btn active" target="_blank">Download CV</a>
+                <a href="mailto:rohitbalapure@gmail.com" class="btn">Contact</a>
             </div>
 
             <div class="social">
                 <a href="mailto:rohitbalapure@gmail.com"><i class="fa fa-envelope"></i></a>
                 <a href="https://github.com/rohitsbalapure"><i class="fa-brands fa-github"></i></a>
-                <a href="https://leetcode.com/sowndharnewbie/"><i class="fa fa-code"></i></a>
-                <a href="https://www.linkedin.com/in/rohit-balapure-93307722a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.hackerrank.com/profile/rohitbalapure"><i class="fa-brands fa-hackerrank"></i></a>
+                <a href="https://www.linkedin.com/in/rohit-balapure-93307722a/"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </div>
 
-        <!-------------------------- About Section -------------------------->
+    <!-------------------------- About Section -------------------------->
     <section class="about-area" id="about">
         <div class="container">
             <div class="about">
-                
                 <div class="about-content">
                     <h4>About Me</h4>
                     <ul>
-                      <li>Recently Completed My Master's Degree in Computer Application. I have built a solid foundation in software development, particularly in areas such as Java, SQL, HTML, CSS, JavaScript, Spring Boot, Git, and GitHub.</li>
-                      <li> My expertise in these areas allows me to approach projects with confidence and deliver high-quality results.I have a strong belief in the value of continuous learning and staying adaptable in the ever-evolving world of software engineering.</li>
-                      <li> I actively seek out opportunities to expand my knowledge and skills, embracing new technologies and approaches.Feel free to explore my work and get in touch if you have any questions or opportunities to collaborate. </li>
+                        <li> Hello! I'm Rohit Balapure, a passionate and results-driven Full Stack Java Developer. I
+                            hold a Master's degree in Computer Applications (MCA) from Savitribai Phule Pune University,
+                            graduating in 2022.</li>
+                        <li>
+                            With a solid foundation in both front-end and back-end technologies, I bring a unique
+                            perspective to software development. During my 4-month internship as a Front-End Developer,
+                            I honed my skills in creating responsive and intuitive user interfaces. This experience
+                            allowed me to collaborate effectively with cross-functional teams and deliver high-quality
+                            web applications.
+                        </li>
+                        <li> As a Full Stack Java Developer, I thrive in leveraging my proficiency in Java, along with
+                            expertise in front-end technologies like HTML, CSS, and JavaScript. My goal is to create
+                            seamless and scalable solutions that not only meet but exceed client expectations. </li>
+                        <li>
+                            I am excited about contributing my skills to dynamic projects, collaborating with
+                            like-minded professionals, and taking on new challenges in the ever-evolving field of
+                            software development. Let's connect and explore how we can create innovative solutions
+                            together!
+                        </li>
                     </ul>
                 </div>
-                                  
+
                 <div class="about-skills">
                     <ul>
                         <li>Name:Rohit Balapure</li>
-                        <li>Age: 24</li>     
+                        <li>Age: 24</li>
                         <li>From: Pune - Maharashtra</li>
                         <li>Email: rohitbalapure@gmail.com</li>
                         <li>Availabiltiy: Fulltime</li>
@@ -91,23 +202,36 @@
             </div>
         </div>
     </section>
+    <!-- ----------------------------Skills ------------------- -->
+    <section class="about-area" id="skills" style="padding-top: 0px; padding-bottom: 20px;">
+        <div class="container">
+            <div class="skills">
+                <div class="skill-content">
+                    <h4>Skills</h4>
+                    <div class="progress-bar frontend-bar">Frontend: 90%</div>
+                    <div class="progress-bar backend-bar">Backend: 85%</div>
+                    <div class="progress-bar fullstack-bar">Fullstack: 80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-        <!-------------- Education & Internship -------------->
+    <!-------------- Education & Internship -------------->
     <section class="education-content" id="education">
         <div class="container">
             <div class="row">
                 <div class="education ">
                     <h3 class="title">Education</h3>
                     <div class="row">
-                        <div class="timeline-box">
+                        <div class="timeline-box" data-aos="fade-up" data-aos-duration="3000">
                             <div class="timeline">
 
                                 <!-- Timeline-item -->
-                                <div class="timeline-item">
+                                <div class="timeline-item" style="padding-bottom: 20px;">
                                     <div class="circle-dot"></div>
                                     <h3 class="timeline-title">
-                                        MCA - Master of computer applications     
+                                        MCA - Master of computer applications
                                     </h3>
                                     <h3>83.46%</h3><br>
 
@@ -115,9 +239,9 @@
                                     <h4 class="timeline-title">
                                         <i class="fa fa-calendar"></i> 2020-2022
                                     </h4>
-                                </div> 
+                                </div>
                                 <!-- Timeline-item -->
-                                <div class="timeline-item">
+                                <div class="timeline-item" style="padding-bottom: 20px;">
                                     <div class="circle-dot"></div>
                                     <h3 class="timeline-title">B.Sc Bachelor Of Science </h3>
                                     <h3>66.23%</h3><br>
@@ -126,33 +250,7 @@
                                         <i class="fa fa-calendar"></i> 2019-2020
                                     </h4>
                                 </div>
-                                <!-- Timeline-item -->
-                              
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship">
-                    <h3 class="title">.</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-                                
-                                <!-- Timeline-item -->
-                                <!-- <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        ANDROID APPLICATION DEVELOPMENT
-                                    </h3>
-                                    <h4 class="timeline-title">FLARIAL TECHNOLOGY</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> JUNE-2022
-                                    </h4>
-                                    <li class="timeline-text">Proficient in Android app development, with expertise in Java and building basic applications. Experienced in creating intuitive design and layout files. Completed a two-week internship, gaining practical skills and knowledge in the field.
-                                    </li>
-                                </div>  -->
-                                <div class="timeline-item">
+                                <div class="timeline-item" style="padding-bottom: 20px;">
                                     <div class="circle-dot"></div>
                                     <h3 class="timeline-title">
                                         HSC-62.00%
@@ -162,9 +260,7 @@
                                         <i class="fa fa-calendar"></i> 2016
                                     </h4>
                                 </div>
-                                <!-- Timeline-item -->
-
-                                <div class="timeline-item">
+                                <div class="timeline-item" style="padding-bottom: 5px;">
                                     <div class="circle-dot"></div>
                                     <h3 class="timeline-title">
                                         SSC-72.40%
@@ -174,18 +270,72 @@
                                         <i class="fa fa-calendar"></i> 2014
                                     </h4>
                                 </div>
-                                <!-- <div class="timeline-item">
+
+
+                                <!-- Timeline-item -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="internship">
+                    <h3 class="title">Internship & Courses</h3>
+                    <div class="row">
+                        <div class="timeline-box" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="timeline">
+                                <div class="timeline-item">
                                     <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">PCB LAYOUT DESIGN </h3>
-                                    <h4 class="timeline-title">PIONEER CIRCUITS</h4>
+                                    <h3 class="timeline-title">
+                                        Frontend Developer Intern
+                                    </h3>
+                                    <h4 class="timeline-title">Webixnet pvt ltd</h4>
                                     <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> DEC-2021
+                                        <i class="fa fa-calendar"></i> Nov - 2023
                                     </h4>
-                                    <li class="timeline-text">Experienced in PCB design and fabrication with a focus on Altium Designer software. Proficient in designing high-quality PCB boards. Two-week internship in the field, gaining hands-on experience and enhancing skills.</li>
-                                <br>
-                                <br>
-                                </div> -->
-                                
+                                    <li class="timeline-text">
+                                        Developed a responsive website UI using HTML, CSS, and JavaScript that reduced
+                                        overall page load speed by 15%.
+                                    </li>
+                                    <li>
+                                        Enhanced the usability of existing applications by applying the latest
+                                        accessibility standards and best practices
+
+                                    </li>
+                                    <li>
+                                        Collaborated with project managers to successfully deliver projects on time,
+                                        resulting in an increase in organizational
+                                        efficiency
+                                    </li>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        Full-Stack Java Development
+                                    </h3>
+                                    <h4 class="timeline-title">Qspider Pune</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> jan - 2023 Sep -2023
+                                    </h4>
+                                    <li class="timeline-text">
+                                        Awarded a Full Stack Java Developer Certification from Qspider Pune.
+                                    </li>
+                                    <li class="timeline-text">
+                                        Developed proficiency in Java, Spring Boot, and Hibernate for back-end
+                                        development.
+
+                                    </li>
+                                    <li>
+                                        Gained expertise in HTML, CSS, and JavaScript for front-end development.
+
+                                    </li>
+                                    <li>
+                                        Familiarity with database design and usage (e.g., MySQL, PostgreSQL).
+
+                                    </li>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -195,9 +345,9 @@
     </section>
 
 
-        <!-------------------------- Projects -------------------------->
+    <!-------------------------- Projects -------------------------->
     <section class="project-content" id="projects">
-        <div class="container">
+        <div class="container" style="margin-top: 100px;">
             <div class="project-title">
                 <h4>My Projects</h4>
                 <p>Discover my projects, where creativity meets innovation</p>
@@ -205,28 +355,38 @@
             <div class="projects">
                 <!-- 1st Project -->
                 <div class="project">
-                    <i class="fa fa-coffee"></i>
+                    <i class="fa-solid fa-circle-h"></i>
                     <h4>Hospital Management System</h4>
-                    <p>This is a simple implementation of the classic Snake game using Java and Swing.</p>
+                    <p>
+                        Developed a comprehensive Hospital Management System using Spring Boot as the backbacend
+                        framework, providing
+                        efficient patient record management and streamlined healthcare processes. <br>
+                        Created RESTful APIs using Spring Boot to enable communicatio between the front-end and back-end
+                        systems
+                    </p>
                 </div>
-                 <!-- 2nd Project -->
-                 <div class="project">
-                    <i class="fa fa-car"></i>
-                    <h4>Student Data Management</h4>
-                    <p>Student Data system is solution for saving Student data into the database. Created using Java, servlet, jdbc and Mysql. </p>
+                <!-- 2nd Project -->
+                <div class="project">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <h4>Twitter-X-Clone </h4>
+                    <p> Developed a fully functional Twitter clone as part of a team project, showcasing proficiency in
+                        full-stack web
+                        development. Technologies used HTML, CSS, and JavaScript, Bootstrap </p>
                 </div>
                 <!-- 3rd Project -->
                 <div class="project">
-                    <i class="fa fa-desktop"></i>
+                    <i class="fa-solid fa-user-tie"></i>
                     <h4>Portfolio Website</h4>
-                    <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce myself, share my projects, and provide information about my  education and internship.</p>
+                    <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce
+                        myself, share my projects, and provide information about my education and internship.</p>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
-        <!-------------------------- Contact Me -------------------------->
+
+    <!-------------------------- Contact Me -------------------------->
 
     <section class="contact-content" id="contact">
         <div class="container">
@@ -246,18 +406,35 @@
             </div>
         </div>
     </section>
-        
+
     <!-------------------------- JS -------------------------->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
-    
+
     <!-------------------------- Footer section -------------------------->
-   <footer class="footer">
-    <small class="message">Thanks for visiting and happy coding!</small>
-    <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
-   </footer>
+    <footer class="footer">
+        <small class="message">Thanks for visiting my portfolio. Have a good day. </small>
+        <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
+    </footer>
 
 </body>
+<script>
+    var ct = 0;
+    function showMenu() {
+        if (ct == 0) {
+            document.getElementById("menumob").style.display = "block";
+            ct++;
+        }
+        else if (ct == 1) {
+            document.getElementById("menumob").style.display = "none";
+            ct = 0;
+
+        }
+
+    }
+</script>
+
 </html>
